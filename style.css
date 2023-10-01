@@ -1,0 +1,88 @@
+font-family: 'Kanit', sans-serif;
+font-family: 'Roboto', sans-serif;
+
+:root {font-size: 12px; /* Tamaño base */}
+    h1 {font-size: 4rem; /* equivale a: 48px */}
+    h2 {font-size: 2rem; /* equivale a: 24px */}
+    nav {font-size: 1.5rem; /* equivale a: 18px */}
+    p {font-size: 1rem; /* equivale a: 12px */}
+    
+p, H1, H2, H3 {
+    font-family: 'Roboto';
+}
+
+@keyframes menucolor {
+    0% {background-color: lightblue;}
+    25% {background-color: rgb(118, 197, 135);}
+    50% {background-color: rgb(173, 196, 105);}
+    75% {background-color: rgb(234, 156, 164);}
+  }
+
+.menu ul {
+    color: white;
+    list-style: none;
+    background-color: lightblue;
+    animation-name: menucolor;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    display: flex;
+    font-family: 'Kanit';
+    justify-content: center;  //justificado al centro
+    flex-direction: column;
+    justify-content: space-around; //espaciado proporcional
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 20px;
+}
+    
+
+.menu ul li:hover {
+    transform: scale(1.3,1.3);
+    transition-duration:1s;
+}
+
+.menu ul li:active {
+    color: red 
+    transform: scale(1,1);
+    transition-duration:1s;}
+
+
+.historia {
+    margin-right: 10%;
+    margin-left: 10%; 
+}
+
+.mapa {
+    margin-right: 10%;
+    margin-left: 10%; 
+}
+
+article {
+    margin-right: 10%;
+    margin-left: 10%; 
+}
+
+
+.formulario {
+    background-color: rgb(172, 229, 172); 
+    font-family: 'Roboto';
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
+    justify-content: space-around;
+}
+
+.formulario textarea {
+    width: 50%;
+    height: 50%;
+}
+footer{
+    color: white;
+    padding: 15px;
+    background-color: lightblue;
+}
