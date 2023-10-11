@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,57 +8,68 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Roboto:ital,wght@0,100;1,300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Roboto:ital,wght@0,100;1,300&display=swap"
+        rel="stylesheet">
 
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
     <header>
-        <div class="menu">
-                <ul>
-                    <li><a href="index.html" class="logo-header"><img src="imagenes/imetro-400x400.png" alt="" height="60px"></a></li>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="historia.html">Historia</a></li>
-                    <li><a href="productos.html">Productos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                </ul>
-        </div>
+        <ul>
+            <li><a href="index.html" class="logo-header"><img src="imagenes/imetro-400x400.png" alt=""
+                        height="60px"></a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
     </header>
-    
-    <h2 class="titulo">
-        CONTACTO
-    </h2>
-    <form action="Link" method="POST" class="formulario">
-        <label for="nombre">Nombre: </label>
-        <input size="40" type="text" name="nombre" id="nombre"> <br>
-        <label for="apellido">Apellido: </label>
-        <input size="40" type="text" name="apellido" id="apellido"><br>
-        <label for="email">Email: </label>
-        <input size="40" type="email" name="email" id="email"><br>
-        <label for="telefono">Telefono: </label>
-        <input size="40" type="tel" name="telefono" id="telefono"><br>
-        <label for="solicitud">Solicitud: </label>
-        <input size="40" type="textarea" rows="5" name="solicitud" id="solicitud"><br>
 
-        <label for="cepillo">Elige tus cepillos favoritos:</label>
-        <select id="cepillo" name="cepillo" size="8" multiple>
-          <option value="cerda">Cerda</option>
-          <option value="pita">Pita</option>
-          <option value="PVC">PVC</option>
-          <option value="nylon">Nylon</option>
-          <option value="tynex">Tynex</option>
-          <option value="acero">Acero</option>
-          <option value="arrastre">Disco de arrastre</option>
-          <option value="lija">Porta lija</option>
+    <form action="" method="POST">
+        <h2 class="titulo">
+            CONTACTO
+        </h2>
+
+
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido">
+
+        <div class="inputRadio">
+            <input type="radio" id="cliente" name="cliente" value="cliente"/>
+            <label for="cliente">Soy Cliente</label>
+
+            <input type="radio" id="noCliente" name="cliente" value="noCliente"/>
+            <label for="noCliente">No soy Cliente</label>
+        </div>
+
+        
+        <input type="email" name="email" id="email" placeholder="E-Mail">
+        <input type="number" name="telefono" id="telefono" placeholder="Teléfono">
+
+        <textarea rows="6" name="solicitud" id="solicitud" placeholder="Escribí tu solicitud"></textarea>
+
+
+        <select id="cepillo" name="cepillo">
+            <option value="seleccione">--Seleccione el cepillo--</option>
+            <option value="cerda">Cerda</option>
+            <option value="pita">Pita</option>
+            <option value="PVC">PVC</option>
+            <option value="nylon">Nylon</option>
+            <option value="tynex">Tynex</option>
+            <option value="acero">Acero</option>
+            <option value="arrastre">Disco de arrastre</option>
+            <option value="lija">Porta lija</option>
         </select>
 
         <input type="submit" value="Enviar">
     </form>
-    <br>
+
     <footer>
         Copyright 2023
     </footer>
 </body>
+
+<script src="index.js"></script>
+
 </html>

@@ -1,15 +1,39 @@
-font-family: 'Kanit', sans-serif;
-font-family: 'Roboto', sans-serif;
+font-family: 'Kanit',
+sans-serif;
+font-family: 'Roboto',
+sans-serif;
 
 
 
-:root {font-size: 12px; /* Tamaño base */}
-    h1 {font-size: 4rem; /* equivale a: 48px */}
-    h2 {font-size: 2rem; /* equivale a: 24px */}
-    nav {font-size: 1.5rem; /* equivale a: 18px */}
-    p {font-size: 1rem; /* equivale a: 12px */}
-    
-p, H1, H2, H3 {
+:root {
+    font-size: 12px;
+    /* Tamaño base */
+}
+
+h1 {
+    font-size: 4rem;
+    /* equivale a: 48px */
+}
+
+h2 {
+    font-size: 2rem;
+    /* equivale a: 24px */
+}
+
+nav {
+    font-size: 1.5rem;
+    /* equivale a: 18px */
+}
+
+p {
+    font-size: 1rem;
+    /* equivale a: 12px */
+}
+
+p,
+H1,
+H2,
+H3 {
     font-family: 'Roboto';
 }
 
@@ -19,31 +43,39 @@ body {
 }
 
 @keyframes menucolor {
-    0% { background-color: lightblue; }
-    50% { background-color: lightgray; }
-    100% { background-color: lightblue; }
+    0% {
+        background-color: lightblue;
+    }
+
+    50% {
+        background-color: lightgray;
+    }
+
+    100% {
+        background-color: lightblue;
+    }
 }
 
-  .menu ul {
+header ul {
     list-style: none;
     display: flex;
-    align-items: center; 
+    align-items: center;
     padding: 0;
 }
 
-.menu li {
+header li {
     margin-left: 20px;
 }
 
-.menu li a {
+header li a {
     text-decoration: none;
-    color: rgba(122,122,122,255);
+    color: rgba(122, 122, 122, 255);
     font-size: 20px;
-    padding: 5px; 
+    padding: 5px;
 }
 
-.menu {
-    height: 70px; 
+header {
+    height: 70px;
     border-bottom: 2px solid black;
 
     background-color: lightblue;
@@ -53,59 +85,121 @@ body {
 
     font-family: 'Kanit';
     display: flex;
-    justify-content: center; /* Centrar verticalmente los elementos */
+    justify-content: center;
+    /* Centrar verticalmente los elementos */
 }
 
-.menu li:hover {
-    transform: scale(1.1,1.1);
-    transition-duration:0.1s;
+header li:hover {
+    transform: scale(1.1, 1.1);
+    transition-duration: 0.1s;
 }
 
-.menu li a:active {
-    color: rgba(78,130,197,255);
+header li a:active {
+    color: rgba(78, 130, 197, 255);
 }
 
-.menu li:active {
-transition-duration:0.1s;
-transform: scale(1);
+header li:active {
+    transition-duration: 0.1s;
+    transform: scale(1);
 }
 
 
 .historia {
     margin-right: 10%;
-    margin-left: 10%; 
+    margin-left: 10%;
 }
 
 .mapa {
     margin-right: 10%;
-    margin-left: 10%; 
+    margin-left: 10%;
 }
 
 article {
     margin-right: 10%;
-    margin-left: 10%; 
+    margin-left: 10%;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 
-.formulario {
+form {
+    border-radius: 10px;
     margin-top: 50px;
-    background-color: rgb(172, 229, 172); 
+    margin-bottom: 50px;
+    background-color: lightblue;
     font-family: 'Roboto';
     margin-right: auto;
     margin-left: auto;
     display: flex;
-    width: 50%;
+    padding: 50px;
+    width: 30%;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    justify-content: space-around;
 }
 
-.formulario textarea {
-    width: 50%;
-    height: 50%;
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
 }
-footer{
+
+.inputRadio {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.inputRadio input {
+    width: auto;
+}
+
+.inputRadio label {
+    margin-right: 20%; /* Espacio entre los botones de radio y las etiquetas */
+}
+
+.inputRadio label:last-child{
+    margin-right: 0;
+}
+
+
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+::placeholder {
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+textarea{
+    
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+
+    resize: vertical;
+}
+
+footer {
     color: white;
     padding: 15px;
     background-color: lightblue;
@@ -114,4 +208,12 @@ footer{
 .titulo {
     text-align: center;
     font-weight: 1000;
+    margin-bottom: 60px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
 }
