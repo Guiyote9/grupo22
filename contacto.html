@@ -29,7 +29,7 @@
       
       
 
-    <form action="" method="">
+    <form action="" method="" id="formularioContacto">
         <h2 class="titulo">
             CONTACTO
         </h2>
@@ -47,9 +47,10 @@
 
         
         <input type="email" name="email" id="email" placeholder="E-Mail">
+
         <input type="number" name="telefono" id="telefono" placeholder="Teléfono">
 
-        <textarea rows="6" name="solicitud" id="solicitud" placeholder="Escribí tu solicitud"></textarea>
+        <textarea rows="6" name="solicitud" id="solicitud" placeholder="Escriba su solicitud"></textarea>
 
 
         <select id="cepillo" name="cepillo">
@@ -65,9 +66,9 @@
             <option value="otro">Ninguno / Otro</option>
         </select>
 
-        <label for="error" id="error"></label>
+        <label for="error" id="error" class="error"></label>
 
-        <button id="enviar" class="enviar" onclick="validar()">Enviar</button>
+        <button type="button" id="enviar" class="enviar" onclick="validar()">Enviar</button>
     </form>
 
     <footer>

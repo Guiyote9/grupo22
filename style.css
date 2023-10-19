@@ -252,8 +252,10 @@ footer {
 }
 
 .titulo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: darkblue;
     text-align: center;
-    font-weight: 1000;
+    font-weight: bold;
     margin-bottom: 60px;
 }
 
@@ -262,4 +264,9 @@ label {
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
+}
+
+.error {
+    color: red;
+    font-size: medium;
 }
