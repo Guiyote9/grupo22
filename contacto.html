@@ -17,17 +17,19 @@
 
 <body>
     <header>
+          <img src="imagenes/menuHamburguesa.png" alt="" height="70px" class="mobile-menu-icon" id="mobile-menu-icon">
         <ul>
-            <li><a href="index.html" class="logo-header"><img src="imagenes/imetro-400x400.png" alt=""
-                        height="60px"></a></li>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="historia.html">Historia</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="index.html" class="logo-header"><img src="imagenes/imetro-400x400.png" alt="" height="60px"></a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="historia.html">Historia</a></li>
+          <li><a href="productos.html">Productos</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
-    </header>
+      </header>
+      
+      
 
-    <form action="" method="POST">
+    <form action="" method="">
         <h2 class="titulo">
             CONTACTO
         </h2>
@@ -60,9 +62,12 @@
             <option value="acero">Acero</option>
             <option value="arrastre">Disco de arrastre</option>
             <option value="lija">Porta lija</option>
+            <option value="otro">Ninguno / Otro</option>
         </select>
 
-        <input type="submit" value="Enviar">
+        <label for="error" id="error"></label>
+
+        <button id="enviar" class="enviar" onclick="validar()">Enviar</button>
     </form>
 
     <footer>
