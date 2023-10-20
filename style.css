@@ -32,7 +32,8 @@ p {
 p,
 H1,
 H2,
-H3 {
+H3,
+article{
     font-family: 'Roboto';
 }
 
