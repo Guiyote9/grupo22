@@ -247,7 +247,7 @@ textarea{
 }
 
 footer {
-    color: white;
+    color: rgba(122, 122, 122, 255);
     padding: 15px;
     background-color: lightblue;
 }
