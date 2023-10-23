@@ -1,58 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Limpieza 22</title>
-  
+
     <link rel="stylesheet" href="style.css">
-    
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Roboto:ital,wght@0,100;1,300&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png"  href="imagenes/imetro-400x400.png">
-<!--  Slider presentacion -->
-  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
-  <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Roboto:ital,wght@0,100;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagenes/imetro-400x400.png">
+    <!--  Slider presentacion -->
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
 </head>
+
 <body>
+
     <header>
         <img src="imagenes/menuHamburguesa.png" alt="" height="70px" class="mobile-menu-icon" id="mobile-menu-icon">
-      <ul>
-        <li><a href="index.html" class="logo-header"><img src="imagenes/imetro-400x400.png" alt="" height="60px"></a></li>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="historia.html">Historia</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+        <ul>
+            <li><a href="index.html" class="logo-header"><img src="imagenes/imetro-400x400.png" alt=""
+                        height="60px"></a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
     </header>
-    
 
-    <nav>
-        <H1> Cepillos industriales para máquina de limpieza de uso profesional. </H1>
-        <h2>Disponible en diversos materiales para diferentes aplicaciones <br>
-Cerda - Pita - Nylon - PVC - Acero - Disco de arrastre.</h2>
-    </nav>
-<br>
-    
-<div class="swiffy-slider">
-    <ul class="slider-container">
-        <li><img src="imagenes/pita.png" style="max-width: 100%;height: auto;"></li>
-        <li><img src="imagenes/pvc.png" style="max-width: 100%;height: auto;"></li>
-        <li><img src="imagenes/tynex.png" style="max-width: 100%;height: auto;"></li>
-    </ul>
+    <div class="swiffy-slider">
+        <ul class="slider-container">
+            <li>
+                <div class="slider-item">
+                    <img src="imagenes/pita.png" class="carrousel">
+                </div>
+            </li>
+            <li>
+                <div class="slider-item">
+                    <img src="imagenes/pvc.png" class="carrousel">
+                </div>
+            </li>
+            <li>
+                <div class="slider-item">
+                    <img src="imagenes/tynex.png" class="carrousel">
+                </div>
+            </li>
+        </ul>
 
-    <button type="button" class="slider-nav"></button>
-    <button type="button" class="slider-nav slider-nav-next"></button>
-
-    <div class="slider-indicators">
-        <button class="active"></button>
-        <button></button>
-        <button></button>
+        <div class="slider-indicators">
+            <button class="active"></button>
+            <button></button>
+            <button></button>
+        </div>
     </div>
-</div>
-    
+
+    <nav class="textoIndex">
+        <H2> Cepillos industriales para máquina de limpieza de uso profesional. </H2>
+        <h4 style="font-weight: bold;">Disponibles en diversos materiales para diferentes aplicaciones: <br>
+            Cerda - Pita - Nylon - PVC - Acero - Disco de arrastre.</h4>
+        <a href="productos.html" class="verCatalogo">Ver catálogo 🔎</a>
+    </nav>
+
+    <div class="beneficios-container">
+
+        <img src="imagenes/beneficios.png" alt="" height="195px">
+
+        <ul class="beneficios-lista">
+            <li>
+                <h3><img src="imagenes/tick.png" alt="" height="20px"> Durabilidad</h3>
+            </li>
+            <li>
+                <h3><img src="imagenes/tick.png" alt="" height="20px"> Eficiencia</h3>
+            </li>
+            <li>
+                <h3><img src="imagenes/tick.png" alt="" height="20px"> Calidad</h3>
+            </li>
+            <li>
+                <h3><img src="imagenes/tick.png" alt="" height="20px"> Resistencia</h3>
+            </li>
+        </ul>
+
+    </div>
+
+
+    <div class="servicio-container">
+
+        <ul class="servicio-lista">
+            <li>
+                <h3><img src="imagenes/tick.png" alt="" height="20px"> Servicio</h3>
+            </li>
+            <li>
+                <h3><img src="imagenes/tick.png" alt="" height="20px"> Atención personalizada</h3>
+            </li>
+            <li>
+                <h3><img src="imagenes/tick.png" alt="" height="20px"> Compromiso</h3>
+            </li>
+            <li>
+                <h3><img src="imagenes/tick.png" alt="" height="20px"> Asesoramiento</h3>
+            </li>
+        </ul>
+
+        <img src="imagenes/servicio.png" alt="" height="195px">
+
+    </div>
+
     <footer>
         Copyright 2023
     </footer>
