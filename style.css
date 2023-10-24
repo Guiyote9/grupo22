@@ -34,6 +34,7 @@ H1,
 H2,
 H3,
 h4,
+h5,
 article{
     font-family: 'Roboto';
 }
@@ -367,3 +368,74 @@ ul.slider-container {
     transform: scale(1.7);
   }
 
+
+  /* ---- TARJETAS ----- */
+
+  .container {
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente en la página */
+    align-items: center; /* Centrar verticalmente en la página */
+    margin-top: 1.6rem;
+    margin-bottom: 1.6rem;
+  }
+  
+  .myCard {
+    width: 175px;
+    height: 210px;
+    margin-right: 20px; /* Agregar margen entre las tarjetas */
+  }
+  
+  .innerCard {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.1s;
+    transform-style: preserve-3d;
+    cursor: pointer;
+    
+    border-radius: 1rem;
+
+    
+  }
+  
+  .myCard:last-child {
+    margin-right: 0; /* Eliminar el margen derecho de la última tarjeta */
+  }
+  
+  .myCard:hover .innerCard {
+    transform: rotateY(180deg);
+  }
+  
+  .frontSide,
+  .backSide {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centrar vertical y horizontalmente */
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    color: black;
+  }
+  
+  .backSide {
+    transform: rotateY(180deg);
+  }
+  
+  
+  @keyframes animate {
+    0% {
+      opacity: 0.3;
+    }
+  
+    80% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0.3;
+    }
+  }

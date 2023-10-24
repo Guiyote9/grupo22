@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,92 +8,158 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Roboto:ital,wght@0,100;1,300&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png"  href="imagenes/imetro-400x400.png">
-    <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-     />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Roboto:ital,wght@0,100;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagenes/imetro-400x400.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
+
 <body>
     <header>
         <img src="imagenes/menuHamburguesa.png" alt="" height="70px" class="mobile-menu-icon" id="mobile-menu-icon">
-      <ul>
-        <li><a href="index.html" class="logo-header"><img src="imagenes/imetro-400x400.png" alt="" height="60px"></a></li>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="historia.html">Historia</a></li>
-        <li><a href="productos.html">Productos</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-      </ul>
+        <ul>
+            <li><a href="index.html" class="logo-header"><img src="imagenes/imetro-400x400.png" alt=""
+                        height="60px"></a></li>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
     </header>
-    
-    <h2>
-        PRODUCTOS
-    </h2>
-    <article class="cerda">
+
+    <div class="container">
+        <div class="myCard">
+            <div class="innerCard">
+                <div class="frontSide">
+                    <h3 class="tituloCard">CERDA</h3>
+                    <h5>Cepillo para lustrar pisos.<br>Obtenga el brillo de sus pisos previamente encerados.</h5>
+                </div>
+                <div class="backSide">
+                    <img src="imagenes/imetro-cerda.png" width="160px"> <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="myCard">
+            <div class="innerCard">
+                <div class="frontSide">
+                    <h3 class="tituloCard">PITA</h3>
+                    <h5>Cepillo para lustrar pisos o lavado suave.<br>Genere brillo de sus pisos o efectúe un lavado
+                        suave</h5>
+                </div>
+                <div class="backSide">
+                    <img src="imagenes/imetro-pita.png" width="160px"> <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="myCard">
+            <div class="innerCard">
+                <div class="frontSide">
+                    <h3 class="tituloCard">PVC</h3>
+                    <h5>Cepillo para lustrar pisos.<br>Remueva la suciedad del suelo</h5>
+                </div>
+                <div class="backSide">
+                    <img src="imagenes/imetro-ppl.png" width="160px"> <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="myCard">
+            <div class="innerCard">
+                <div class="frontSide">
+                    <h3 class="tituloCard">NYLON</h3>
+                    <h5>Cepillo para lavar alfombras.<br>Apto para la mayoria de tipos de pelo</h5>
+                </div>
+                <div class="backSide">
+                    <img src="imagenes/imetro-nylon.png" width="160px"> <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="myCard">
+            <div class="innerCard">
+                <div class="frontSide">
+                    <h3 class="tituloCard">ACERO</h3>
+                    <h5>Cepillo para lavado profundo pisos<br>Remueva incrustaciones y suciedad profunda</h5>
+                </div>
+                <div class="backSide">
+                    <img src="imagenes/imetro-acero.png" width="160px"> <br>
+                </div>
+            </div>
+        </div>
+
+        <div class="myCard">
+            <div class="innerCard">
+                <div class="frontSide">
+                    <h3 class="tituloCard">DISCO DE ARRASTRE</h3>
+                    <h5>Disco de arrastre para portar pads de limpieza<br>Apto para rasquetear pisos de maderas</h5>
+                </div>
+                <div class="backSide">
+                    <img src="imagenes/imetro-arrastre.png" width="160px"> <br>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!--<article class="cerda">
         <H2> Cerda </H2>
             <div class="cepillos">
-                <img src="imagenes/imetro-cerda.png" height="100px"> <br>
+                
             </div>
-        <!-- <button onclick="actualizarPrecio()">Actualizar precio</button> -->
-        <h3> Cepillo para lustrar pisos :: obtenga el brillo de sus pisos previamente encerados.</h3>
-        <p>Utilice el cepillo en pisos de madera, para obtener un lustrado superior. </p>
-        <p>En pisos duros, como marmol, terrazo, baldosas, obtendra un resultado excelente, sus pisos quedarán espectaculares con un resplandor soñado.</p>
-        <p>Recomendamos instalar cera de uso profesional para alto transito a efectos de disponer de un mayor rendimiento del lustrado.</p>
-        <!-- <div class="cotizacion"></div> -->
-    </article>
+         <button onclick="actualizarPrecio()">Actualizar precio</button> -->
 
-    <article class="pita">
+    <!-- <p>Utilice el cepillo en pisos de madera, para obtener un lustrado superior. </p>
+        <p>En pisos duros, como marmol, terrazo, baldosas, obtendra un resultado excelente, sus pisos quedarán espectaculares con un resplandor soñado.</p> 
+
+    </article>-->
+
+    <!--<article class="pita">
         <H2> Pita </H2>
-        <div class="cepillos">
-            <img src="imagenes/imetro-pita.png">
-        </div>
-        <h3> Cepillo para lustrar pisos o lavado suave :: genere brillo de sus pisos o efectúe un lavado suave</h3>
         <p> Modo lustrado, al igual que el cepillo de cerda, puede utilizar al cepillo de pita para lustrar pisos, tanto de madera, como marmol, terrazo, baldosas, etc.</p>
         <p> Modo lavado suave, para aquellos pisos que deben ser tratados cuidadosamente, éste tipo de material permite tratarlo convenientemente sin poner en riesgo la integridad de la superficie.</p>
         <p> Recomendado para pisos con pintura epoxy, porcelanatos, ceramicas, plastificados, entre otros.</p>
-    </article>
+    </article> -->
 
-    <article class="pvc">
-        <H2> PVC </H2>
-        <div class="cepillos">
-            <img src="imagenes/imetro-ppl.png">
-        </div>
-        <h3> Cepillo para pvc pisos :: remueva la suciedad del suelo</h3>
-        <p> El lavado de pisos requiere de la combinación de una herramienta mecanica como el cepillo y un producto químico acorde al tipo de suciedad, en este caso el cepillo de uso generico permite la remoción de suciedad sobre la mayoría de tipos de pisos.</p>
+    <!--<article class="pvc">
+        
+        <h3> Cepillo para pvc pisos :: </h3>
+        <p> El lavado de pisos requiere de la combinación de una herramienta mecanica como el cepillo y un producto
+            químico acorde al tipo de suciedad, en este caso el cepillo de uso generico permite la remoción de suciedad
+            sobre la mayoría de tipos de pisos.</p>
         <p> Utilizar agua caliente generalmente facilita la limpieza.</p>
-    </article>
+    </article> -->
 
-    <article class="nylon">
-        <H2> Nylon </H2>
-        <div class="cepillos">
-            <img src="imagenes/imetro-nylon.png">
-        </div>
-        <h3> Cepillo para lavar alfombras :: apto para la mayoria de tipos de pelo </h3>
-        <p> El nylon, material constitutivo, permite una efectiva friccion sobre la alfombra y resulta de suma importancia complementar el uso con un shampoo para alfombras que genere espuma.</p>
-        <p> Para la recollección de la espuma y suciedad removida por el cepillo, recomendamos utilizar una aspiradora polvo/agua para tal efecto.</p>
-        <p> Higienice y limpie convenientemente el cepillo al finalizar el trabajo, para restablecer el formato de los filamentos, debe anjuagar con agua caliente.</p>        
-    </article>
+   <!-- <article class="nylon">
+        <p> El nylon, material constitutivo, permite una efectiva friccion sobre la alfombra y resulta de suma
+            importancia complementar el uso con un shampoo para alfombras que genere espuma.</p>
+        <p> Para la recollección de la espuma y suciedad removida por el cepillo, recomendamos utilizar una aspiradora
+            polvo/agua para tal efecto.</p>
+        <p> Higienice y limpie convenientemente el cepillo al finalizar el trabajo, para restablecer el formato de los
+            filamentos, debe anjuagar con agua caliente.</p>
+    </article>-->
 
-    <article class="acero">
-        <H2> Acero </H2>
-        <article class="cepillos">
-            <img src="imagenes/imetro-acero.png">
-        </article>
-        <h3> Cepillo para lavado profundo pisos :: remueva incrustaciones y suciedad profunda</h3>
-        <p> Para aquellos casos donde el cepillo pvc no fuera suficiente por tratarse de un tipo de suciedad extrema, aqui es donde destaca el cepillo de acero.</p>
-        <p> Intenso, agresivo, de acción profunda. Ideal combinar con removedores quimicos para complementar la acción de limpieza de la suciedad evitando la fricción innecesaria prolongada de la superficie. </p>
-    </article>
+       <!-- <article class="acero">
+            <img src="">
+        <h3>  :: </h3>
+        <p> Para aquellos casos donde el cepillo pvc no fuera suficiente por tratarse de un tipo de suciedad extrema,
+            aqui es donde destaca el cepillo de acero.</p>
+        <p> Intenso, agresivo, de acción profunda. Ideal combinar con removedores quimicos para complementar la acción
+            de limpieza de la suciedad evitando la fricción innecesaria prolongada de la superficie. </p>
+    </article>-->
 
-    <article class="arrastre">
-        <H2> Disco de arrastre </H2>
-        <div class="cepillos">
-           <img src="imagenes/imetro-arrastre.png">
-        </div>
-        <h3> Disco de arrastre para portar pads de limpieza</h3>
+    <!--<article class="arrastre">
+        <h3> </h3>
         <p> Herramienta indispensable para la utilización de discos de limpieza o 'pads cleaner'.</p>
         <p> Sus multiples propositos, permiten tambien rasquetear pisos de maderas al poder soportar la viruta.</p>
     </article>
-    <br>
+    <br>-->
+    
     <footer>
         Copyright 2023
     </footer>
