@@ -440,10 +440,55 @@ ul.slider-container {
     }
   }
 
+/* ---- Historia ----- */
 
-    .historia{
-        display: flex;
-        justify-content: center; 
-        align-items: center; 
-        padding-left: 5%;
-      }
+.historia{
+    width: 80%;
+    padding: 5%;
+    background-color: lightblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px 100px;
+    box-sizing: border-box;
+    font-size: 16px;
+    resize: vertical;
+}
+
+.visionmision{
+    width: 80%;
+    padding: 5%;
+    background-color: lightgray;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 100px 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    resize: vertical;
+}
+
+.politicaCalidad{
+    width: 80%;
+    padding: 5%;
+    background-color: lightblue;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 4px 100px;
+    box-sizing: border-box;
+    font-size: 16px;
+    resize: vertical;
+}
+
+.mapa{
+    width: 80%;
+    padding: 5%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+    border-radius: 100px 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+    resize: vertical;
+}
