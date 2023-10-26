@@ -36,7 +36,7 @@ H3,
 h4,
 h5,
 article,
-footer{
+footer {
     font-family: 'Roboto';
 }
 
@@ -62,38 +62,39 @@ body {
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
     ul {
-      display: none !important; /* Oculta el menú principal en dispositivos móviles */
+        display: none !important;
+        /* Oculta el menú principal en dispositivos móviles */
     }
 
-    header.active{
+    header.active {
         height: 100%;
     }
-  
+
     ul.active {
-      display: flex !important;
-      flex-direction: column;
-      align-items: center;
-      
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+
     }
 
     ul.active li {
         margin-bottom: 10px;
     }
-  
+
     .mobile-menu-icon {
-      display: flex !important;
-      cursor: pointer;
+        display: flex !important;
+        cursor: pointer;
     }
 
     img.active {
         display: none !important;
-      }
-  }
-  
+    }
+}
+
 .mobile-menu-icon {
     display: none;
 }
-  
+
 
 header ul {
     list-style: none;
@@ -213,10 +214,11 @@ input {
 }
 
 .inputRadio label {
-    margin-right: 20%; /* Espacio entre los botones de radio y las etiquetas */
+    margin-right: 20%;
+    /* Espacio entre los botones de radio y las etiquetas */
 }
 
-.inputRadio label:last-child{
+.inputRadio label:last-child {
     margin-right: 0;
 }
 
@@ -236,8 +238,8 @@ select {
     color: black;
 }
 
-textarea{
-    
+textarea {
+
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
@@ -249,12 +251,24 @@ textarea{
     resize: vertical;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
 footer {
-    color: rgba(122, 122, 122, 255);
+    text-align: center;
+    font-weight: bold;
+    margin-top: auto;
+    color: rgba(122, 122, 122, 1);
     padding: 15px;
     background-color: lightblue;
-    border-top: black 2px solid;
+    border-top: 2px solid black;
 }
+
+
 
 .titulo {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -281,7 +295,7 @@ label {
 }
 
 ul.slider-container {
-    text-align: center  ;
+    text-align: center;
 }
 
 .carrousel {
@@ -299,34 +313,34 @@ ul.slider-container {
     margin: 2%;
 
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     padding-right: 20%;
 }
 
 .beneficios-lista {
-    list-style: none; 
-    margin: 0; 
+    list-style: none;
+    margin: 0;
     padding: 0;
 
     margin-left: 30px;
 }
 
 .beneficios-lista li {
-    margin-bottom: 10%; 
+    margin-bottom: 10%;
 }
 
 .servicio-container {
     margin: 2%;
 
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     padding-left: 10%;
 }
 
 .servicio-lista {
     text-align: right;
-    list-style: none; 
-    margin: 0; 
+    list-style: none;
+    margin: 0;
     padding: 0;
 
     margin-right: 30px;
@@ -338,7 +352,7 @@ ul.slider-container {
 
 
     border: 1px rgba(78, 130, 197, 255) solid;
-    box-shadow: 0px 0px 10px 0px  rgba(78, 130, 197, 255);
+    box-shadow: 0px 0px 10px 0px rgba(78, 130, 197, 255);
     border-radius: 10px;
 
     color: rgba(78, 130, 197, 255);
@@ -352,11 +366,11 @@ ul.slider-container {
 /*                    --------    Productos    --------    */
 .cepillos {
     height: 70%;
-    width: 70%;  
+    width: 70%;
     overflow: hidden;
     margin: 0 auto;
     display: grid;
-    place-items: center;   
+    place-items: center;
 }
 
 .cepillos img {
@@ -367,26 +381,31 @@ ul.slider-container {
 .cepillos:hover img {
     filter: grayscale(0%);
     transform: scale(1.7);
-  }
+}
 
 
-  /* ---- TARJETAS ----- */
+/* ---- TARJETAS ----- */
 
-  .container {
+
+.container {
     display: flex;
-    justify-content: center; /* Centrar horizontalmente en la página */
-    align-items: center; /* Centrar verticalmente en la página */
-    margin-top: 1.6rem;
-    margin-bottom: 1.6rem;
-  }
-  
-  .myCard {
+    justify-content: center;
+   
+    align-items: center;
+    
+    margin-top: 2.6rem;
+    margin-bottom: 2.6rem;
+}
+
+.myCard {
+    padding: 10px;
     width: 175px;
-    height: 210px;
-    margin-right: 20px; /* Agregar margen entre las tarjetas */
-  }
-  
-  .innerCard {
+    height: 280px;
+    margin-right: 20px;
+ 
+}
+
+.innerCard {
     position: relative;
     width: 100%;
     height: 100%;
@@ -394,56 +413,123 @@ ul.slider-container {
     transition: transform 0.1s;
     transform-style: preserve-3d;
     cursor: pointer;
-    
+
+    border: 2px rgba(78, 130, 197, 0.3) solid;
     border-radius: 1rem;
 
-    
-  }
-  
-  .myCard:last-child {
-    margin-right: 0; /* Eliminar el margen derecho de la última tarjeta */
-  }
-  
-  .myCard:hover .innerCard {
+
+}
+
+.myCard:hover .innerCard {
     transform: rotateY(180deg);
-  }
-  
-  .frontSide,
-  .backSide {
+}
+
+.frontSide,
+.backSide {
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Centrar vertical y horizontalmente */
+    justify-content: center;
+    /* Centrar vertical y horizontalmente */
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
     color: black;
-  }
-  
-  .backSide {
+}
+
+.backSide {
     transform: rotateY(180deg);
-  }
-  
-  
-  @keyframes animate {
+}
+
+
+@keyframes animate {
     0% {
-      opacity: 0.3;
+        opacity: 0.3;
     }
-  
+
     80% {
-      opacity: 1;
+        opacity: 1;
     }
-  
+
     100% {
-      opacity: 0.3;
+        opacity: 0.3;
     }
-  }
+}
+
+/* ---- Tarjeta Grande --- */
+
+.cardGrande {
+    overflow: auto;
+    z-index: 1;
+    background-color: whitesmoke;
+    border: rgba(78, 130, 197, 0.5) 2px solid;
+    box-shadow: 0px 0px 30px 0px black;
+    position: absolute;
+    width: 40%;
+    height: 74%;
+    border-radius: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+    flex-direction: column;
+}
+
+.closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    background-color: #f44336;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.closeButton:hover {
+    background-color: #d32f2f;
+    /* Cambia el color de fondo al pasar el ratón por encima */
+}
+
+.imagenCardGrande img {
+    max-height: 25vh;
+    margin-bottom: 1rem;
+}
+
+.tituloCardGrande {
+    margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+    .cardGrande {
+        width: 80%; 
+        height: 80%;
+    }
+    .imagenCardGrande img {
+        max-width: 100%;
+    }
+    .tituloCardGrande {
+        font-size: 20px; 
+    }
+}
+
+
 
 /* ---- Historia ----- */
 
-.historia{
+.historia {
     width: 80%;
     padding: 5%;
     background-color: lightblue;
@@ -456,7 +542,7 @@ ul.slider-container {
     resize: vertical;
 }
 
-.visionmision{
+.visionmision {
     width: 80%;
     padding: 5%;
     background-color: lightgray;
@@ -469,7 +555,7 @@ ul.slider-container {
     resize: vertical;
 }
 
-.politicaCalidad{
+.politicaCalidad {
     width: 80%;
     padding: 5%;
     background-color: lightblue;
@@ -482,7 +568,7 @@ ul.slider-container {
     resize: vertical;
 }
 
-.mapa{
+.mapa {
     width: 80%;
     padding: 5%;
     margin-top: 20px;
