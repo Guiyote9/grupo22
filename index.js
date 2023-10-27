@@ -23,6 +23,8 @@ function validar() {
   var telefono = document.getElementById("telefono").value;
   var solicitud = document.getElementById("solicitud").value;
   var cepillo = document.getElementById("cepillo").value;
+  var datosPersonales = document.getElementById("datosPersonales").checked;
+
 
   if (!nombreYApellido.test(nombre)) {
     msjError.innerHTML = "Ingrese un nombre y apellido correcto.";
@@ -55,6 +57,11 @@ function validar() {
 
   if (cepillo === "seleccione") {
     msjError.innerHTML = "Seleccione una opción de cepillo.";
+    return;
+  }
+
+  if (!datosPersonales) {
+    msjError.innerHTML = "Debe aceptar términos para continuar.";
     return;
   }
 
