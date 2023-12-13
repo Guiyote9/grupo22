@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>IMETRO Cepillos Industriales</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -25,14 +25,16 @@
 <body>
 
     <header>
-        <img src="imagenes/menuHamburguesa.png" alt="" height="70px" class="mobile-menu-icon" id="mobile-menu-icon">
+        <img src="{{ url_for('static', filename='imagenes/menuHamburguesa.png')}}" alt="" height="70px" class="mobile-menu-icon" id="mobile-menu-icon">
         <ul>
-            <li><a href="index.html" class="logo-header"><img src="imagenes/imetro-400x400.png" alt=""
+            <li><a href="/" class="logo-header"><img src="{{ url_for('static', filename='imagenes/imetro-400x400.png')}}" alt=""
                         height="60px"></a></li>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="historia.html">Historia</a></li>
-            <li><a href="productos.html">Productos</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="historia">Historia</a></li>
+            <li><a href="productos">Productos</a></li>
+            <li><a href="contacto">Contacto</a></li>
+            <li><a href="comprar">Comprar</a></li>
+            <li><a href="pedidos">Mis Pedidos</a></li>
         </ul>
     </header>
 
@@ -40,17 +42,17 @@
         <ul class="slider-container">
             <li>
                 <div class="slider-item">
-                    <img src="imagenes/pita.png" class="carrousel">
+                    <img src="{{ url_for('static', filename='imagenes/pita.png')}}" class="carrousel">
                 </div>
             </li>
             <li>
                 <div class="slider-item">
-                    <img src="imagenes/pvc.png" class="carrousel">
+                    <img src="{{ url_for('static', filename='imagenes/pvc.png')}}" class="carrousel">
                 </div>
             </li>
             <li>
                 <div class="slider-item">
-                    <img src="imagenes/tynex.png" class="carrousel">
+                    <img src="{{ url_for('static', filename='imagenes/tynex.png')}}" class="carrousel">
                 </div>
             </li>
         </ul>
@@ -71,20 +73,20 @@
 
     <div class="beneficios-container">
 
-        <img src="imagenes/beneficios.png" alt="" height="195px">
+        <img src="{{ url_for('static', filename='imagenes/beneficios.png')}}" alt="" height="195px">
 
         <ul class="beneficios-lista">
             <li>
-                <h3><img src="imagenes/tick.png" alt="" height="20px"> Durabilidad</h3>
+                <h3><img src="{{ url_for('static', filename='imagenes/tick.png')}}" alt="" height="20px"> Durabilidad</h3>
             </li>
             <li>
-                <h3><img src="imagenes/tick.png" alt="" height="20px"> Eficiencia</h3>
+                <h3><img src="{{ url_for('static', filename='imagenes/tick.png')}}" alt="" height="20px"> Eficiencia</h3>
             </li>
             <li>
-                <h3><img src="imagenes/tick.png" alt="" height="20px"> Calidad</h3>
+                <h3><img src="{{ url_for('static', filename='imagenes/tick.png')}}" alt="" height="20px"> Calidad</h3>
             </li>
             <li>
-                <h3><img src="imagenes/tick.png" alt="" height="20px"> Resistencia</h3>
+                <h3><img src="{{ url_for('static', filename='imagenes/tick.png')}}" alt="" height="20px"> Resistencia</h3>
             </li>
         </ul>
 
@@ -95,20 +97,20 @@
 
         <ul class="servicio-lista">
             <li>
-                <h3>Servicio <img src="imagenes/tick.png" alt="" height="20px"></h3>
+                <h3>Servicio <img src="{{ url_for('static', filename='imagenes/tick.png')}}" alt="" height="20px"></h3>
             </li>
             <li>
-                <h3>Atención personalizada <img src="imagenes/tick.png" alt="" height="20px"></h3>
+                <h3>Atención personalizada <img src="{{ url_for('static', filename='imagenes/tick.png')}}" alt="" height="20px"></h3>
             </li>
             <li>
-                <h3>Compromiso <img src="imagenes/tick.png" alt="" height="20px"></h3>
+                <h3>Compromiso <img src="{{ url_for('static', filename='imagenes/tick.png')}}" alt="" height="20px"></h3>
             </li>
             <li>
-                <h3>Asesoramiento <img src="imagenes/tick.png" alt="" height="20px"></h3>
+                <h3>Asesoramiento <img src="{{ url_for('static', filename='imagenes/tick.png')}}" alt="" height="20px"></h3>
             </li>
         </ul>
 
-        <img src="imagenes/servicio.png" alt="" height="195px">
+        <img src="{{ url_for('static', filename='imagenes/servicio.png')}}" alt="" height="195px">
 
     </div>
 
@@ -117,6 +119,7 @@
     </footer>
 </body>
 
-<script src="index.js"></script>
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
 
 </html>

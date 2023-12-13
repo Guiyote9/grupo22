@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMETRO Cepillos Industriales</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Roboto:ital,wght@0,100;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagenes/imetro-400x400.png">
+    <!--  Slider presentacion -->
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <header>
+        <img src="{{ url_for('static', filename='imagenes/menuHamburguesa.png')}}" alt="" height="70px" class="mobile-menu-icon" id="mobile-menu-icon">
+        <ul>
+            <li><a href="/" class="logo-header"><img src="{{ url_for('static', filename='imagenes/imetro-400x400.png')}}" alt=""
+                        height="60px"></a></li>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="historia">Historia</a></li>
+            <li><a href="productos">Productos</a></li>
+            <li><a href="contacto">Contacto</a></li>
+            <li><a href="comprar">Comprar</a></li>
+            <li><a href="pedidos">Mis Pedidos</a></li>
+        </ul>
+    </header>
+      
+      
+    {% for pedido in pedidos %}
+
+    <form action="/update" method="post" id="formularioCompra">
+        <h2 class="titulo">
+            EDITAR PEDIDO
+        </h2>
+
+        <input type="number" name="id" id="id" placeholder="ID" value="{{ pedido[0] }}" readonly>
+        
+        <input type="text" name="nombre" id="nombre" placeholder="Nombre y Apellido" value="{{ pedido[1] }}">
+        
+        <input type="email" name="email" id="email" placeholder="E-Mail" value="{{ pedido[2] }}">
+
+        <input type="number" name="telefono" id="telefono" placeholder="Teléfono" value="{{ pedido[3] }}">
+
+        <textarea rows="6" name="solicitud" id="solicitud" placeholder="Escriba su solicitud">{{ pedido[4] }}</textarea>
+
+        <div class="inputRadio">
+            <input type="checkbox" id="datosPersonales" name="datosPersonales" checked="true"> <label for="datosPersonales"> Acepto el uso de mis datos personales.</label>
+        </div>
+
+        <label for="error" id="error" class="error"></label>
+
+        <button type="button" id="enviar" class="enviar" onclick="validarEdit()">Enviar</button>
+
+        
+    </form>
+
+    {% endfor %}
+
+    
+    <footer>
+        Copyright 2023
+    </footer>
+</body>
+
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+
+</html>

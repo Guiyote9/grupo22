@@ -69,6 +69,85 @@ function validar() {
 }
 
 
+function validarCompra() {
+  var msjError = document.getElementById("error");
+  var nombre = document.getElementById("nombre").value;
+  var email = document.getElementById("email").value;
+  var telefono = document.getElementById("telefono").value;
+  var solicitud = document.getElementById("solicitud").value;
+  var datosPersonales = document.getElementById("datosPersonales").checked;
+
+
+  if (!nombreYApellido.test(nombre)) {
+    msjError.innerHTML = "Ingrese un nombre y apellido correcto.";
+    return;
+  }
+  msjError.innerHTML = "";
+
+  if (!paraEmail.test(email)) {
+    msjError.innerHTML = "Ingrese un E-Mail correcto.";
+    return;
+  }
+  msjError.innerHTML = "";
+
+  if (!telefonoArg.test(telefono)) {
+    msjError.innerHTML = "Teléfono inválido. Formato: 11XXXXXXXX.";
+    return;
+  }
+  msjError.innerHTML = "";
+
+  if (solicitud === "") {
+    msjError.innerHTML = "Su solicitud no puede estar en blanco.";
+    return;
+  }
+
+  if (!datosPersonales) {
+    msjError.innerHTML = "Debe aceptar términos para continuar.";
+    return;
+  }
+
+  document.getElementById("formularioCompra").submit();
+}
+
+function validarEdit() {
+  var msjError = document.getElementById("error");
+  var nombre = document.getElementById("nombre").value;
+  var email = document.getElementById("email").value;
+  var telefono = document.getElementById("telefono").value;
+  var solicitud = document.getElementById("solicitud").value;
+  var datosPersonales = document.getElementById("datosPersonales").checked;
+
+  if (!nombreYApellido.test(nombre)) {
+    msjError.innerHTML = "Ingrese un nombre y apellido correcto.";
+    return;
+  }
+  msjError.innerHTML = "";
+
+  if (!paraEmail.test(email)) {
+    msjError.innerHTML = "Ingrese un E-Mail correcto.";
+    return;
+  }
+  msjError.innerHTML = "";
+
+  if (!telefonoArg.test(telefono)) {
+    msjError.innerHTML = "Teléfono inválido. Formato: 11XXXXXXXX.";
+    return;
+  }
+  msjError.innerHTML = "";
+
+  if (solicitud === "") {
+    msjError.innerHTML = "Su solicitud no puede estar en blanco.";
+    return;
+  }
+
+  if (!datosPersonales) {
+    msjError.innerHTML = "Debe aceptar términos para continuar.";
+    return;
+  }
+
+  document.getElementById("formularioCompra").submit();
+}
+
 
 
 

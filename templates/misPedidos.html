@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMETRO Cepillos Industriales</title>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Roboto:ital,wght@0,100;1,300&display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/png" href="imagenes/imetro-400x400.png">
+    <!--  Slider presentacion -->
+    <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous"
+        defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet"
+        crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <header>
+        <img src="{{ url_for('static', filename='imagenes/menuHamburguesa.png')}}" alt="" height="70px" class="mobile-menu-icon" id="mobile-menu-icon">
+        <ul>
+            <li><a href="/" class="logo-header"><img src="{{ url_for('static', filename='imagenes/imetro-400x400.png')}}" alt=""
+                        height="60px"></a></li>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="historia">Historia</a></li>
+            <li><a href="productos">Productos</a></li>
+            <li><a href="contacto">Contacto</a></li>
+            <li><a href="comprar">Comprar</a></li>
+            <li><a href="pedidos">Mis Pedidos</a></li>
+        </ul>
+    </header>
+
+    <body>
+        <h2 class="titulo">
+            MIS PEDIDOS
+        </h2>
+
+        <table class="">
+            <thead class="">
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre y Apellido</th>
+                    <th>E-Mail</th>
+                    <th>Teléfono</th>
+                    <th>Pedido</th>
+                    <th>Acción</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for pedido in pedidos %}
+                <tr>
+                    <td>{{pedido[0]}}</td>
+                    <td>{{pedido[1]}}</td>
+                    <td>{{pedido[2]}}</td>
+                    <td>{{pedido[3]}}</td>
+                    <td>{{pedido[4]}}</td>
+                    <td class="botones-tabla">
+                        <a href="/destroy/{{pedido[0]}}">Borrar</a>
+                        <a href="/edit/{{pedido[0]}}">Editar</a>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+
+    <footer>
+        Copyright 2023
+    </footer>
+</body>
+
+<script src="{{ url_for('static', filename='js/index.js') }}"></script>
+
+
+</html>
